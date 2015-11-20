@@ -1,6 +1,6 @@
 # GrapeSwaggerRails
 
-## Forked this version to incorporate https://github.com/jensoleg/swagger-ui
+Forked this version to incorporate https://github.com/jensoleg/swagger-ui
 
 Swagger UI as Rails Engine for grape-swagger gem.
 
