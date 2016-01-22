@@ -4,6 +4,9 @@ namespace :swagger_ui do
   namespace :dist do
     desc 'Update Swagger-UI from jensoleg/swagger-ui.'
     task :update do
+      puts 'This task has not been fully updates for alternate source, exiting'
+      exit
+
       Dir.mktmpdir 'swagger-ui' do |dir|
         puts "Cloning into #{dir} ..."
         # clone wordnik/swagger-ui
@@ -57,8 +60,9 @@ namespace :swagger_ui do
         repo.add 'app/assets/stylesheets/grape_swagger_rails'
         # Generate application.js
         CSS_FILES = [
-          'reset.css',
-          'screen.css'
+          'index.css',
+          'standalone.css',
+          'api-explorer.css'
         ]
         css_files = Dir["#{root}/app/assets/stylesheets/grape_swagger_rails/*.css"].map { |f|
           f.split('/').last
