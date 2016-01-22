@@ -1,5 +1,5 @@
 /*
-*= require ./index
-*= require ./standalone
-*= require ./api-explorer
+*= require ./reset
+*= require ./screen
+*= require_self
 */
